@@ -1,0 +1,47 @@
+body html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.main-body {
+    display: grid;
+    grid-template-rows: 30% 70%;
+    background-color: #0077BE;
+}
+
+p {
+    font-size: 2vh;
+    color: #fff;
+    opacity: 0.7;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header-content h1 {
+    color: #fff;
+    font-size: 4vh;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-evenly;
+}
+
+.card-features {
+    background-color: #5892C7;
+    display: flex;
+    justify-content: center;
+}
+
+.card-features h2 {
+    color: #fff;
+    font-size: 3vh;
+}
