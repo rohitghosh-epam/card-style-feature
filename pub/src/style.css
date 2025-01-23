@@ -3,6 +3,7 @@ body html {
     padding: 0;
     height: 100%;
     width: 100%;
+    font-family: 'Inter', sans-serif;
 }
 
 .main-body {
@@ -11,6 +12,9 @@ body html {
     display: grid;
     grid-template-rows: 2fr 4fr;
     background-color: #0077BE;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 p {
@@ -20,16 +24,18 @@ p {
 }
 
 img {
+    margin-top: 2rem;
     height: 12rem;
     width: 15rem;
     border-radius: 10px;
 }
 
 .header-content {
-    padding-top: 6rem;
+    padding-top: 2rem;
     justify-content: center;
     align-items: center;
     text-align: center;
+    gap: 0;
 }
 
 .header-content h1 {
@@ -38,19 +44,29 @@ img {
 }
 
 .cards {
+    padding-top: 2rem;
     display: grid;
     grid-template-columns: 30% 30% 30%;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.cards .img-content {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .card-features {
     background-color: #5892C7;
+    border-radius: 20px;
+    width: 19rem;
+    height: 23rem;
 }
 
-.card-features > img {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.card-body {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 .card-features h2 {
