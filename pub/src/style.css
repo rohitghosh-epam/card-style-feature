@@ -61,15 +61,122 @@ img {
     background-color: #5892C7;
     border-radius: 20px;
     width: 19rem;
-    height: 23rem;
+    height: auto;
 }
 
 .card-body {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    text-align: left;
 }
 
 .card-features h2 {
     color: #fff;
     font-size: 3vh;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .cards {
+        align-items: center;
+        display: inline-flex;
+        justify-content: space-evenly;
+    }
+    
+    .card-features {
+        width: 6rem;
+    }
+
+    .card-body {
+        padding-left: 1.2vh;
+        padding-right: 1.2vh;
+    }
+
+    img {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    h1 {
+        font-size: 0.5vh;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .cards {
+        align-items: center;
+        display: inline-flex;
+        justify-content: space-evenly;
+    }
+    
+    .card-features {
+        width: 9rem;
+    }
+
+    .card-body {
+        padding-left: 3.2vh;
+        padding-right: 3.2vh;
+    }
+
+    img {
+        height: 7rem;
+        width: 7rem;
+    }
+
+    h2 {
+        font-size: 0.5vh;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .cards {
+        align-items: center;
+        display: inline-flex;
+        justify-content: space-evenly;
+    }
+    
+    .card-features {
+        width: 12rem;
+    }
+
+    .card-body {
+        padding-left: 3.2vh;
+        padding-right: 3.2vh;
+    }
+
+    img {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    h2 {
+        font-size: 1vh;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .card-body {
+        padding-left: 1.8rem;
+        padding-right: 1.8rem;
+        text-align: left;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .cards {
+        padding-top: 0;
+    }
+
+    .card-features {
+        padding-bottom: 2rem;
+    }
+
+    .card-body {
+        padding-left: 1.8rem;
+        padding-right: 1.8rem;
+        text-align: left;
+    }
 }
