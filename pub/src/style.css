@@ -6,8 +6,10 @@ body html {
 }
 
 .main-body {
+    height: 100%;
+    width: 100%;
     display: grid;
-    grid-template-rows: 30% 70%;
+    grid-template-rows: 2fr 4fr;
     background-color: #0077BE;
 }
 
@@ -17,8 +19,14 @@ p {
     opacity: 0.7;
 }
 
+img {
+    height: 12rem;
+    width: 15rem;
+    border-radius: 10px;
+}
+
 .header-content {
-    display: flex;
+    padding-top: 6rem;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -37,8 +45,12 @@ p {
 
 .card-features {
     background-color: #5892C7;
-    display: flex;
+}
+
+.card-features > img {
     justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .card-features h2 {
